@@ -1,12 +1,53 @@
 ---
 title: "Assignment 1"
-date: "2022-10-01"
+format: html
+editor: visual
+author: "Derya Şaşmaz"
+date: "2023-10-25"
 ---
 
-This is a template example qmd output page. You may see an example R code below.
+## Who is Derya?
 
-```{r}
-set.seed(1)
-vec1 <- sample(LETTERS,5)
-paste0(vec1,collapse="")
-```
+I'm **Derya Şaşmaz.** I'm currently working at Sigortam.net as CX & Process Developer. Data-driven decision making is the key for my role. I use data to prioritize the projects and analyze cost-benefits.
+
+👩‍💻 [My LinkedIn Profile](https://www.linkedin.com/in/deryasasmaz/)
+
+Feel free to connect me!
+
+## Posit Videos
+
+I choose **"Data Visualization and Plotting with Shiny for Python"** and "**Shiny Programming Practices"** videos. The main reason is my interest in data visualization, especially at work. After learning some about Shiny, I decided to watch the second video too.
+
+#### **Data Visualization and Plotting with Shiny for Python**
+
+::: {style="text-align: center;"}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B2JzHv4FOTU?si=J67nNxSbMHlNoHGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+:::
+
+In the first video, Carson discusses the development of an interactive web application using Shiny, a web application framework for R, and highlights its integration with various data visualization tools. He covers creating interactive applications with Shiny, introducing layout sidebar structures, explaining reactive calculations, employing the render plot function for data visualization, emphasizing its wide compatibility with different packages, and providing practical code examples for using visualization libraries within the Shiny application.
+
+#### **Shiny Programming Practices**
+
+::: {style="text-align: center;"}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B2JzHv4FOTU?si=J67nNxSbMHlNoHGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+:::
+
+The second video reflects on Joe's experiences building user interfaces (UIs) using traditional event-driven methods. He discusses the concept of a "reactive graph" in frameworks like Shiny for R. He draws an analogy between functions and reactive components, underlining the need for modules to be easily understandable. He explores two development approaches: top-down and bottom-up. The choice depends on familiarity with the problem domain. He prefers top-down for structured and reliable component development.
+
+## Dataset
+
+#### Netflix Movies and TV Shows
+
+"Netflix Movies and TV Shows" is a great data to analyze. Netflix is one of the most popular media and video streaming platforms. They have over 8000 movies or tv shows available on their platform.
+
+The dataset provides details about a wide range of movies and TV shows available on Netflix, including information about their release year, rating, duration, and more. It's a comprehensive dataset for exploring the Netflix content library.
+
+This dataset offers an engaging and relevant way to teach data analysis, data visualization, and recommendation systems, all within the context of a popular streaming platform. It allows students to work with real-world data while learning valuable data science skills.
+
+[Dataset Kaggle Link](https://www.kaggle.com/datasets/shivamb/netflix-shows/)
+
+## R Posts

@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -143,9 +177,21 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#who-is-derya" id="toc-who-is-derya" class="nav-link active" data-scroll-target="#who-is-derya"><span class="header-section-number">1.1</span> Who is Derya?</a></li>
-  <li><a href="#posit-videos" id="toc-posit-videos" class="nav-link" data-scroll-target="#posit-videos"><span class="header-section-number">1.2</span> Posit Videos</a></li>
-  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset"><span class="header-section-number">1.3</span> Dataset</a></li>
-  <li><a href="#r-posts" id="toc-r-posts" class="nav-link" data-scroll-target="#r-posts"><span class="header-section-number">1.4</span> R Posts</a></li>
+  <li><a href="#posit-videos" id="toc-posit-videos" class="nav-link" data-scroll-target="#posit-videos"><span class="header-section-number">1.2</span> Posit Videos</a>
+  <ul class="collapse">
+  <li><a href="#data-visualization-and-plotting-with-shiny-for-python" id="toc-data-visualization-and-plotting-with-shiny-for-python" class="nav-link" data-scroll-target="#data-visualization-and-plotting-with-shiny-for-python"><span class="header-section-number">1.2.1</span> <strong>Data Visualization and Plotting with Shiny for Python</strong></a></li>
+  <li><a href="#shiny-programming-practices" id="toc-shiny-programming-practices" class="nav-link" data-scroll-target="#shiny-programming-practices"><span class="header-section-number">1.2.2</span> <strong>Shiny Programming Practices</strong></a></li>
+  </ul></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset"><span class="header-section-number">1.3</span> Dataset</a>
+  <ul class="collapse">
+  <li><a href="#netflix-movies-and-tv-shows" id="toc-netflix-movies-and-tv-shows" class="nav-link" data-scroll-target="#netflix-movies-and-tv-shows"><span class="header-section-number">1.3.1</span> Netflix Movies and TV Shows</a></li>
+  </ul></li>
+  <li><a href="#r-posts" id="toc-r-posts" class="nav-link" data-scroll-target="#r-posts"><span class="header-section-number">1.4</span> R Posts</a>
+  <ul class="collapse">
+  <li><a href="#data-visualization-with-ggplot2" id="toc-data-visualization-with-ggplot2" class="nav-link" data-scroll-target="#data-visualization-with-ggplot2"><span class="header-section-number">1.4.1</span> Data Visualization with ggplot2</a></li>
+  <li><a href="#basic-data-frame-creation" id="toc-basic-data-frame-creation" class="nav-link" data-scroll-target="#basic-data-frame-creation"><span class="header-section-number">1.4.2</span> Basic Data Frame Creation</a></li>
+  <li><a href="#basic-arithmetic-operations" id="toc-basic-arithmetic-operations" class="nav-link" data-scroll-target="#basic-arithmetic-operations"><span class="header-section-number">1.4.3</span> Basic Arithmetic Operations</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -183,44 +229,132 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="who-is-derya" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="who-is-derya"><span class="header-section-number">1.1</span> Who is Derya?</h2>
-<p>I’m <strong>Derya Şaşmaz.</strong> I’m currently working at Sigortam.net as CX &amp; Process Developer. Data-driven decision making is the key for my role. I use data to prioritize the projects and analyze cost-benefits.</p>
+<p>I’m <strong>Derya Şaşmaz.</strong> I’m currently working at Sigortam.net as CX &amp; Process Developer. Data-driven decision making is the key for my role. I use data to prioritize the tasks and analyze cost-benefits for all projects.</p>
 <p>👩‍💻 <a href="https://www.linkedin.com/in/deryasasmaz/">My LinkedIn Profile</a></p>
-<p>Feel free to connect me!</p>
+<p>Feel free to connect with me!</p>
 </section>
 <section id="posit-videos" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="posit-videos"><span class="header-section-number">1.2</span> Posit Videos</h2>
 <p>I choose <strong>“Data Visualization and Plotting with Shiny for Python”</strong> and “<strong>Shiny Programming Practices”</strong> videos. The main reason is my interest in data visualization, especially at work. After learning some about Shiny, I decided to watch the second video too.</p>
-<section id="data-visualization-and-plotting-with-shiny-for-python" class="level4" data-number="1.2.0.1">
-<h4 data-number="1.2.0.1" class="anchored" data-anchor-id="data-visualization-and-plotting-with-shiny-for-python"><span class="header-section-number">1.2.0.1</span> <strong>Data Visualization and Plotting with Shiny for Python</strong></h4>
+<section id="data-visualization-and-plotting-with-shiny-for-python" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="data-visualization-and-plotting-with-shiny-for-python"><span class="header-section-number">1.2.1</span> <strong>Data Visualization and Plotting with Shiny for Python</strong></h3>
 <div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B2JzHv4FOTU?si=J67nNxSbMHlNoHGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5zJC0AB-UK8?si=YVCcu6Ft7dG1PCVN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
 </iframe>
 </div>
-<p>In the first video, Carson discusses the development of an interactive web application using Shiny, a web application framework for R, and highlights its integration with various data visualization tools. He covers creating interactive applications with Shiny, introducing layout sidebar structures, explaining reactive calculations, employing the render plot function for data visualization, emphasizing its wide compatibility with different packages, and providing practical code examples for using visualization libraries within the Shiny application.</p>
+<p>In the first video, there is a discussion about the development of an interactive web application using Shiny, a web application framework for R, and its integration with various data visualization tools. It covers creating interactive applications with Shiny, explaining reactive calculations, using the render plot function for data visualization, introducing its wide compatibility with different packages, and providing practical code examples for using visualization libraries within the Shiny application.</p>
 </section>
-<section id="shiny-programming-practices" class="level4" data-number="1.2.0.2">
-<h4 data-number="1.2.0.2" class="anchored" data-anchor-id="shiny-programming-practices"><span class="header-section-number">1.2.0.2</span> <strong>Shiny Programming Practices</strong></h4>
+<section id="shiny-programming-practices" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="shiny-programming-practices"><span class="header-section-number">1.2.2</span> <strong>Shiny Programming Practices</strong></h3>
 <div style="text-align: center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2JzHv4FOTU?si=J67nNxSbMHlNoHGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
 </iframe>
 </div>
-<p>The second video reflects on Joe’s experiences building user interfaces (UIs) using traditional event-driven methods. He discusses the concept of a “reactive graph” in frameworks like Shiny for R. He draws an analogy between functions and reactive components, underlining the need for modules to be easily understandable. He explores two development approaches: top-down and bottom-up. The choice depends on familiarity with the problem domain. He prefers top-down for structured and reliable component development.</p>
+<p>The second video reflects on the author’s experiences building UIs using traditional event-driven methods. It mentions the concept of a “reactive graph” in frameworks like Shiny for R. He draws an analogy between functions and reactive components, explains the need for modules to be easily understandable.</p>
 </section>
 </section>
 <section id="dataset" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="dataset"><span class="header-section-number">1.3</span> Dataset</h2>
-<section id="netflix-movies-and-tv-shows" class="level4" data-number="1.3.0.1">
-<h4 data-number="1.3.0.1" class="anchored" data-anchor-id="netflix-movies-and-tv-shows"><span class="header-section-number">1.3.0.1</span> Netflix Movies and TV Shows</h4>
+<section id="netflix-movies-and-tv-shows" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="netflix-movies-and-tv-shows"><span class="header-section-number">1.3.1</span> Netflix Movies and TV Shows</h3>
 <p>“Netflix Movies and TV Shows” is a great data to analyze. Netflix is one of the most popular media and video streaming platforms. They have over 8000 movies or tv shows available on their platform.</p>
 <p>The dataset provides details about a wide range of movies and TV shows available on Netflix, including information about their release year, rating, duration, and more. It’s a comprehensive dataset for exploring the Netflix content library.</p>
-<p>This dataset offers an engaging and relevant way to teach data analysis, data visualization, and recommendation systems, all within the context of a popular streaming platform. It allows students to work with real-world data while learning valuable data science skills.</p>
+<p>This dataset offers an engaging and relevant way to teach data analysis, data visualization, and recommendation systems, all within the context of a popular streaming platform. I believe it allows students to work with real-world data while learning valuable data science skills.</p>
 <p><a href="https://www.kaggle.com/datasets/shivamb/netflix-shows/">Dataset Kaggle Link</a></p>
 </section>
 </section>
 <section id="r-posts" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="r-posts"><span class="header-section-number">1.4</span> R Posts</h2>
+<section id="data-visualization-with-ggplot2" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="data-visualization-with-ggplot2"><span class="header-section-number">1.4.1</span> Data Visualization with ggplot2</h3>
+<p>This helps to create a simple scatter plot using the ggplot2 package to visualize data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the ggplot2 library</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a sample dataset</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">X =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">Y =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">2</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a scatter plot</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> X, <span class="at">y =</span> Y)) <span class="sc">+</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape =</span> <span class="dv">19</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Simple Scatter Plot"</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"X-axis"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Y-axis"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="assignment1_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="basic-data-frame-creation" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="basic-data-frame-creation"><span class="header-section-number">1.4.2</span> Basic Data Frame Creation</h3>
+<p>This example shows how to create a basic data frame in R.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a basic data frame</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Name =</span> <span class="fu">c</span>(<span class="st">"Alice"</span>, <span class="st">"Bob"</span>, <span class="st">"Charlie"</span>, <span class="st">"David"</span>),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Age =</span> <span class="fu">c</span>(<span class="dv">25</span>, <span class="dv">30</span>, <span class="dv">22</span>, <span class="dv">28</span>),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Grade =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"B"</span>, <span class="st">"A"</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the data frame</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     Name Age Grade
+1   Alice  25     A
+2     Bob  30     B
+3 Charlie  22     B
+4   David  28     A</code></pre>
+</div>
+</div>
+</section>
+<section id="basic-arithmetic-operations" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="basic-arithmetic-operations"><span class="header-section-number">1.4.3</span> Basic Arithmetic Operations</h3>
+<p>Some basic arithmetic operation examples with two variables.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define two variables</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Addition</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>sum_ab <span class="ot">&lt;-</span> a <span class="sc">+</span> b</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Sum of a and b: "</span>, sum_ab, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Sum of a and b:  8 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Subtraction</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>diff_ab <span class="ot">&lt;-</span> a <span class="sc">-</span> b</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Difference between a and b: "</span>, diff_ab, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Difference between a and b:  2 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Multiplication</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>product_ab <span class="ot">&lt;-</span> a <span class="sc">*</span> b</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Product of a and b: "</span>, product_ab, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Product of a and b:  15 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Division</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>quotient_ab <span class="ot">&lt;-</span> a <span class="sc">/</span> b</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Division of a by b: "</span>, quotient_ab, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Division of a by b:  1.666667 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Exponentiation</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>power_ab <span class="ot">&lt;-</span> a<span class="sc">^</span>b</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"a raised to the power of b: "</span>, power_ab, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>a raised to the power of b:  125 </code></pre>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

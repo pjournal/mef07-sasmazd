@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "[STUDENT/GROUP NAME] Progress Journal",
     "section": "",
-    "text": "This progress journal covers [STUDENT NAME SURNAME / PROJECT GROUP NAME]’s work during their term at BDA 503 Fall 2022.\nEach section is an assignment or an individual work."
+    "text": "Introduction\n\nThis progress journal covers [STUDENT NAME SURNAME / PROJECT GROUP NAME]’s work during their term at BDA 503 Fall 2022.\nEach section is an assignment or an individual work."
   },
   {
     "objectID": "intro.html",
@@ -32,6 +32,6 @@
     "href": "assignment1.html",
     "title": "1  Assignment 1",
     "section": "",
-    "text": "set.seed(1)\nvec1 <- sample(LETTERS,5)\npaste0(vec1,collapse=\"\")\n\n[1] \"YDGAB\""
+    "text": "Who is Derya?\nI’m Derya Şaşmaz. I’m currently working at Sigortam.net as CX & Process Developer. Data-driven decision making is the key for my role. I use data to prioritize the projects and analyze cost-benefits.\n👩‍💻 My LinkedIn Profile\nFeel free to connect me!\nPosit Videos\nI choose “Data Visualization and Plotting with Shiny for Python” and “Shiny Programming Practices” videos. The main reason is my interest in data visualization, especially at work. After learning some about Shiny, I decided to watch the second video too.\nData Visualization and Plotting with Shiny for Python\n\n\nIn the first video, Carson discusses the development of an interactive web application using Shiny, a web application framework for R, and highlights its integration with various data visualization tools. He covers creating interactive applications with Shiny, introducing layout sidebar structures, explaining reactive calculations, employing the render plot function for data visualization, emphasizing its wide compatibility with different packages, and providing practical code examples for using visualization libraries within the Shiny application.\nShiny Programming Practices\n\n\nThe second video reflects on Joe’s experiences building user interfaces (UIs) using traditional event-driven methods. He discusses the concept of a “reactive graph” in frameworks like Shiny for R. He draws an analogy between functions and reactive components, underlining the need for modules to be easily understandable. He explores two development approaches: top-down and bottom-up. The choice depends on familiarity with the problem domain. He prefers top-down for structured and reliable component development.\nDataset\nNetflix Movies and TV Shows\n“Netflix Movies and TV Shows” is a great data to analyze. Netflix is one of the most popular media and video streaming platforms. They have over 8000 movies or tv shows available on their platform.\nThe dataset provides details about a wide range of movies and TV shows available on Netflix, including information about their release year, rating, duration, and more. It’s a comprehensive dataset for exploring the Netflix content library.\nThis dataset offers an engaging and relevant way to teach data analysis, data visualization, and recommendation systems, all within the context of a popular streaming platform. It allows students to work with real-world data while learning valuable data science skills.\nDataset Kaggle Link\nR Posts"
   }
 ]

@@ -1,0 +1,31 @@
+{
+    "id": "C27C23E0",
+    "path": "~/GitHub/mef07-sasmazd/inClass.qmd",
+    "project_path": "inClass.qmd",
+    "type": "quarto_markdown",
+    "hash": "764767594",
+    "contents": "",
+    "dirty": false,
+    "created": 1698340979067.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "source_window_id": "",
+        "Source": "Source",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "327:796",
+        "cursorPosition": "23,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1698345010,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1698345010028,
+    "read_only": false,
+    "read_only_alternatives": []
+}

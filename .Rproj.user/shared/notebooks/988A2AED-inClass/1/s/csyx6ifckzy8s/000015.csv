@@ -1,0 +1,7 @@
+"0","library(dplyr)"
+"0",""
+"0","my_data = read.csv(""/Users/ugurc/Masaüstü/Derya/netflix_titles.csv"")"
+"0",""
+"0","# First 10 rows"
+"0","satir = head(my_data, 10)"
+"0","satir"

@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -178,6 +212,142 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>my_data <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">"/Users/ugurc/Masaüstü/Derya/netflix_titles.csv"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># First 10 rows</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>satir <span class="ot">=</span> <span class="fu">head</span>(my_data, <span class="dv">10</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>satir</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   show_id    type                            title
+1       s1   Movie             Dick Johnson Is Dead
+2       s2 TV Show                    Blood &amp; Water
+3       s3 TV Show                        Ganglands
+4       s4 TV Show            Jailbirds New Orleans
+5       s5 TV Show                     Kota Factory
+6       s6 TV Show                    Midnight Mass
+7       s7   Movie My Little Pony: A New Generation
+8       s8   Movie                          Sankofa
+9       s9 TV Show    The Great British Baking Show
+10     s10   Movie                     The Starling
+                        director
+1                Kirsten Johnson
+2                               
+3                Julien Leclercq
+4                               
+5                               
+6                  Mike Flanagan
+7  Robert Cullen, José Luis Ucha
+8                   Haile Gerima
+9                Andy Devonshire
+10                Theodore Melfi
+                                                                                                                                                                                                                                                                                                              cast
+1                                                                                                                                                                                                                                                                                                                 
+2  Ama Qamata, Khosi Ngema, Gail Mabalane, Thabang Molaba, Dillon Windvogel, Natasha Thahane, Arno Greeff, Xolile Tshabalala, Getmore Sithole, Cindy Mahlangu, Ryle De Morny, Greteli Fincham, Sello Maake Ka-Ncube, Odwa Gwanya, Mekaila Mathys, Sandi Schultz, Duane Williams, Shamilla Miller, Patrick Mofokeng
+3                                                                                                                                                              Sami Bouajila, Tracy Gotoas, Samuel Jouy, Nabiha Akkari, Sofia Lesaffre, Salim Kechiouche, Noureddine Farihi, Geert Van Rampelberg, Bakary Diombera
+4                                                                                                                                                                                                                                                                                                                 
+5                                                                                                                                                                                                         Mayur More, Jitendra Kumar, Ranjan Raj, Alam Khan, Ahsaas Channa, Revathi Pillai, Urvi Singh, Arun Kumar
+6                                                                         Kate Siegel, Zach Gilford, Hamish Linklater, Henry Thomas, Kristin Lehman, Samantha Sloyan, Igby Rigney, Rahul Kohli, Annarah Cymone, Annabeth Gish, Alex Essoe, Rahul Abburi, Matt Biedel, Michael Trucco, Crystal Balint, Louis Oliver
+7                                                                                                                                                                Vanessa Hudgens, Kimiko Glenn, James Marsden, Sofia Carson, Liza Koshy, Ken Jeong, Elizabeth Perkins, Jane Krakowski, Michael McKean, Phil LaMarr
+8                                                                                                                                                                                                  Kofi Ghanaba, Oyafunmike Ogunlano, Alexandra Duah, Nick Medley, Mutabaruka, Afemo Omilami, Reggie Carter, Mzuri
+9                                                                                                                                                                                                                                                            Mel Giedroyc, Sue Perkins, Mary Berry, Paul Hollywood
+10                                                                                                                                          Melissa McCarthy, Chris O'Dowd, Kevin Kline, Timothy Olyphant, Daveed Diggs, Skyler Gisondo, Laura Harrier, Rosalind Chao, Kimberly Quinn, Loretta Devine, Ravi Kapoor
+                                                                 country
+1                                                          United States
+2                                                           South Africa
+3                                                                       
+4                                                                       
+5                                                                  India
+6                                                                       
+7                                                                       
+8  United States, Ghana, Burkina Faso, United Kingdom, Germany, Ethiopia
+9                                                         United Kingdom
+10                                                         United States
+           date_added release_year rating  duration
+1  September 25, 2021         2020  PG-13    90 min
+2  September 24, 2021         2021  TV-MA 2 Seasons
+3  September 24, 2021         2021  TV-MA  1 Season
+4  September 24, 2021         2021  TV-MA  1 Season
+5  September 24, 2021         2021  TV-MA 2 Seasons
+6  September 24, 2021         2021  TV-MA  1 Season
+7  September 24, 2021         2021     PG    91 min
+8  September 24, 2021         1993  TV-MA   125 min
+9  September 24, 2021         2021  TV-14 9 Seasons
+10 September 24, 2021         2021  PG-13   104 min
+                                                       listed_in
+1                                                  Documentaries
+2                International TV Shows, TV Dramas, TV Mysteries
+3  Crime TV Shows, International TV Shows, TV Action &amp; Adventure
+4                                         Docuseries, Reality TV
+5         International TV Shows, Romantic TV Shows, TV Comedies
+6                             TV Dramas, TV Horror, TV Mysteries
+7                                       Children &amp; Family Movies
+8               Dramas, Independent Movies, International Movies
+9                                   British TV Shows, Reality TV
+10                                              Comedies, Dramas
+                                                                                                                                                 description
+1   As her father nears the end of his life, filmmaker Kirsten Johnson stages his death in inventive and comical ways to help them both face the inevitable.
+2        After crossing paths at a party, a Cape Town teen sets out to prove whether a private-school swimming star is her sister who was abducted at birth.
+3         To protect his family from a powerful drug lord, skilled thief Mehdi and his expert team of robbers are pulled into a violent and deadly turf war.
+4        Feuds, flirtations and toilet talk go down among the incarcerated women at the Orleans Justice Center in New Orleans on this gritty reality series.
+5   In a city of coaching centers known to train India’s finest collegiate minds, an earnest but unexceptional student and his friends navigate campus life.
+6   The arrival of a charismatic young priest brings glorious miracles, ominous mysteries and renewed religious fervor to a dying town desperate to believe.
+7  Equestria's divided. But a bright-eyed hero believes Earth Ponies, Pegasi and Unicorns should be pals — and, hoof to heart, she’s determined to prove it.
+8    On a photo shoot in Ghana, an American model slips back in time, becomes enslaved on a plantation and bears witness to the agony of her ancestral past.
+9           A talented batch of amateur bakers face off in a 10-week competition, whipping up their best dishes in the hopes of being named the U.K.'s best.
+10   A woman adjusting to life after a loss contends with a feisty bird that's taken over her garden — and a husband who's struggling to find a way forward.</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>my_data <span class="sc">%&gt;%</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(type)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     type    n
+1   Movie 6131
+2 TV Show 2676</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>my_data <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(director <span class="sc">==</span> <span class="st">'Jane Campion'</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  show_id  type       title     director
+1    s116 Movie Bright Star Jane Campion
+2    s123 Movie  In the Cut Jane Campion
+3    s268 Movie   The Piano Jane Campion
+                                                                                                                                                                cast
+1 Abbie Cornish, Ben Whishaw, Paul Schneider, Kerry Fox, Edie Martin, Thomas Brodie-Sangster, Claudie Blakley, Gerard Monaco, Antonia Campbell-Hughes, Samuel Roukin
+2                                     Meg Ryan, Mark Ruffalo, Jennifer Jason Leigh, Nick Damici, Sharrieff Pugh, Kevin Bacon, Yaani King Mondschein, Heather Litteer
+3                                                         Holly Hunter, Harvey Keitel, Sam Neill, Anna Paquin, Kerry Walker, Genevieve Lemon, Tungia Baker, Ian Mune
+                                           country        date_added
+1                United Kingdom, Australia, France September 2, 2021
+2 United Kingdom, Australia, France, United States September 2, 2021
+3    New Zealand, Australia, France, United States   August 15, 2021
+  release_year rating duration                                  listed_in
+1         2009     PG  119 min                    Dramas, Romantic Movies
+2         2003      R  118 min                                  Thrillers
+3         1993      R  121 min Classic Movies, Dramas, Independent Movies
+                                                                                                                                            description
+1  This drama details the passionate three-year romance between Romantic poet John Keats – who died tragically at age 25 – and his great love and muse.
+2 After embarking on an affair with the cop probing the murder of a young woman, an insular schoolteacher suspects her lover was involved in the crime.
+3             With her daughter and her beloved piano in tow, a mute Scottish woman arrives in New Zealand, where a gruff loner sets out to seduce her.</code></pre>
+</div>
+</div>
 
 
 

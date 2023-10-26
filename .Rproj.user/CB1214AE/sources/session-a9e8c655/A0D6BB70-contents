@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: "[Derya Şaşmaz] Progress Journal"
+  title: "Derya Şaşmaz Progress Journal"
   repo-url: https://github.com/pjournal/mef07-sasmazd
   chapters:
     - index.qmd

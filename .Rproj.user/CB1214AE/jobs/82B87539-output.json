@@ -83,3 +83,5 @@
 [1,"pandoc \n  to: html\n  output-file: inClass.html\n  standalone: true\n  toc: true\n  number-sections: true\n  title-prefix: '[Derya Şaşmaz] Progress Journal'\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  number-offset:\n    - 2\n  \nmetadata\n  crossref:\n    chapters: true\n  document-css: false\n  link-citations: true\n  date-format: long\n  lang: en\n  theme: cosmo\n  title: \"[2]{.chapter-number}\\_ [In Class 1]{.chapter-title}\"\n  editor: visual\n  author: Derya Şaşmaz\n  date: '2023-10-25'\n  hide-description: true\n  \n"]
 [1,"Output created: docs\\inClass.html\n\nWatching files for changes\n"]
 [1,"GET: /inClass.html\n"]
+[1,"GET: /inClass.html\n"]
+[1,"  /site_libs/bootstrap/bootstrap-icons.woff (404: Not Found)\n"]

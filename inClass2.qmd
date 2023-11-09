@@ -1,0 +1,27 @@
+---
+title: "In Class 2"
+format: html
+editor: visual
+author: "Derya Şaşmaz"
+date: "2023-11-09"
+---
+
+```{r}
+library(dplyr)
+
+my_data = read.csv("/Users/deryasasmaz/Downloads/BDA/netflix_titles.csv")
+
+# First 10 rows
+satir = head(my_data, 10)
+satir
+```
+
+```{r}
+my_data %>% 
+  count(type)
+```
+
+```{r}
+my_data %>%
+  filter(director == 'Jane Campion') 
+```

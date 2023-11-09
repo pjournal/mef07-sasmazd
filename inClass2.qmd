@@ -20,3 +20,12 @@ graph
 
 
 ```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+MS_df = my_data %>% filter(director == "Martin Scorsese")
+ggplot(MS_df %>% select(release_year, title), aes(x = release_year, y = title)) +
+    geom_point() + 
+    labs (title = "Martin Scorsese'nin Yıllara Göre Filmleri", x = "Yıl", y = "Film")
+```

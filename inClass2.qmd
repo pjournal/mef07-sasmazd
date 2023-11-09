@@ -8,20 +8,15 @@ date: "2023-11-09"
 
 ```{r}
 library(dplyr)
+library(ggplot2)
 
 my_data = read.csv("/Users/deryasasmaz/Documents/Github/mef07-sasmazd/netflix_titles.csv")
 
-# First 10 rows
-satir = head(my_data, 10)
-satir
-```
+director_df = my_data %>% count(director)
+sorted_director = director_df %>% arrange(desc(n)) 
+HD = sorted_director %>% slice(2:11)
+graph = ggplot(HD, aes(x = director, y = n)) + geom_bar(stat="identity", fill="skyblue") + labs(title = "En Çok Filmi Olan 10 Yönetmen", x = "Yönetmen", y = "Film Sayısı")
+graph
 
-```{r}
-my_data %>% 
-  count(type)
-```
 
-```{r}
-my_data %>%
-  filter(director == 'Jane Campion') 
 ```

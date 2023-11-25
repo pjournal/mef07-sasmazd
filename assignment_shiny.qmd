@@ -8,4 +8,8 @@ date: "2023-11-25"
 
 ## Shiny App Link: Netflix Veri Analizi
 
+[Netflix Shiny App](https://sasmazd.shinyapps.io/Shiny_HW/)
+
 ## Command Line
+
+**shiny::runGitHub(repo = "pjournal/mef07-sasmazd",subdir="Shiny_HW/app.R")**

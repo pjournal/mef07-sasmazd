@@ -1,6 +1,7 @@
 library(shiny)
 library(tidyverse)
 
+#setwd("/Users/deryasasmaz/Documents/GitHub/mef07-sasmazd/Shiny_HW")
 my_data = read.csv("netflix_titles.csv")
 print(my_data)
 

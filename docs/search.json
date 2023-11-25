@@ -53,13 +53,13 @@
     "href": "assignment_shiny.html#shiny-app-link-netflix-veri-analizi",
     "title": "4  Shiny Assignment",
     "section": "4.1 Shiny App Link: Netflix Veri Analizi",
-    "text": "4.1 Shiny App Link: Netflix Veri Analizi"
+    "text": "4.1 Shiny App Link: Netflix Veri Analizi\nNetflix Shiny App"
   },
   {
     "objectID": "assignment_shiny.html#command-line",
     "href": "assignment_shiny.html#command-line",
     "title": "4  Shiny Assignment",
     "section": "4.2 Command Line",
-    "text": "4.2 Command Line"
+    "text": "4.2 Command Line\nshiny::runGitHub(repo = “pjournal/mef07-sasmazd”,subdir=“Shiny_HW/app.R”)"
   }
 ]

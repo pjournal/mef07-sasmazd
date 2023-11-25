@@ -1,7 +1,7 @@
 library(shiny)
 library(tidyverse)
 
-my_data = read.csv("/Users/deryasasmaz/Documents/Github/mef07-sasmazd/Shiny_HW/netflix_titles.csv")
+my_data = read.csv("netflix_titles.csv")
 print(my_data)
 
 ui <- fluidPage(

@@ -6,6 +6,6 @@ author: "Derya Şaşmaz"
 date: "2023-11-25"
 ---
 
-## Shiny App Link: Netflix Veri Analizi 
+## Shiny App Link: Netflix Veri Analizi
 
 ## Command Line

@@ -1,0 +1,12 @@
+name: Shiny_HW
+title: Shiny_HW
+username: sasmazd
+account: sasmazd
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10623688
+bundleId: 7967745
+url: https://sasmazd.shinyapps.io/Shiny_HW/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

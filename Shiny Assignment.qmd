@@ -1,0 +1,11 @@
+---
+title: "Shiny Assignment"
+format: html
+editor: visual
+author: "Derya Şaşmaz"
+date: "2023-11-25"
+---
+
+## Shiny App Link: Netflix Veri Analizi 
+
+## Command Line

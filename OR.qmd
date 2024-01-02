@@ -1,0 +1,41 @@
+---
+title: "Operational Research"
+format: html
+editor: visual
+author: "Derya Şaşmaz"
+date: "2024-01-02"
+---
+
+## Business Case: Optimizing Gate and Stand Assignments
+
+Copenhagen Airports, overseeing both Roskilde and Copenhagen airports, struggled to efficiently manage and expand aircraft stands amid rising air travel demands. The complex operational requirements, including specific aircraft types and airline preferences, posed a formidable challenge for strategic planning.
+
+As I often prefer air travel for my journeys, I decided to choose aviation-related research.
+
+You can find detailed information about the business case **"Optimizing Gate and Stand Assignments"** from this [link](https://p1.aprimocdn.net/gurobi/ca9b3b9f-81f5-44e4-8ccf-b021013c8a4f/originalfile/Case-Study---Copenhagen-Airport-Gate-and-Stand-Assignment.pdf).
+
+## Problem
+
+In 2010, the airport faced the task of maximizing current aircraft stands while planning future expansions cost-effectively. Traditional top-down analyses fell short in considering crucial operational details, prompting the need for a more detailed, **bottom-up optimization model**.
+
+## What is Bottom-Up Optimization Model?
+
+A Bottom-Up Optimization Model is an approach in problem-solving that starts with specific, detailed elements and builds a comprehensive solution from the ground up. In this method, you begin with specific operational details and gradually integrate them to form a complete and optimized solution. This bottom-up approach ensures a more detailed and accurate representation of the real-world situation, allowing for a more effective and tailored solution to complex problems. In the context of Copenhagen Airport, where specific aircraft types, stand limitations, and airline preferences play crucial roles, a bottom-up approach allows for a more accurate representation of the real-world scenario.
+
+## OR Team Solution
+
+The Copenhagen Airport Operations Research (OR) team created an advanced mathematical model in two months. This model considered both strict rules (like specific aircraft at certain stands) and flexible preferences (such as airline proximity), guided the team in recommending an efficient plan for investments in stands and gates.
+
+## Benefits
+
+-   **Cost Savings:** The implemented solution saved \$70 million USD.
+
+-   **Efficient Planning:** The detailed optimization model identified an efficient usage and expansion plan for aircraft stands and gates.
+
+-   **Informed Decision-Making:** Quick solution algorithms provided valuable insights, refining the model for informed decision-making.
+
+-   **Strategic Investments:** The recommended plan led to a \$70 million USD investment in new stands and gates, meeting future capacity needs.
+
+## Conclusion
+
+Copenhagen Airport successfully addressed the challenge, optimizing aircraft stand usage and laying a strategic foundation for future expansions. The collaborative effort between the OR team showcases the synergy between operations and development in solving high-opportunity problems in airport management.

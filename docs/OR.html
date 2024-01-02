@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Derya Şaşmaz">
-<meta name="dcterms.date" content="2023-11-25">
+<meta name="dcterms.date" content="2024-01-02">
 
-<title>Derya Şaşmaz Progress Journal - 4&nbsp; Shiny Assignment</title>
+<title>Derya Şaşmaz Progress Journal - 5&nbsp; Operational Research</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./OR.html" rel="next">
-<link href="./inClass2.html" rel="prev">
+<link href="./assignment_shiny.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./assignment_shiny.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Shiny Assignment</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./OR.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Operational Research</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -147,13 +146,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignment_shiny.html" class="sidebar-item-text sidebar-link active">
+  <a href="./assignment_shiny.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Shiny Assignment</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./OR.html" class="sidebar-item-text sidebar-link">
+  <a href="./OR.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Operational Research</span></span></a>
   </div>
 </li>
@@ -167,8 +166,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#shiny-app-link-netflix-veri-analizi" id="toc-shiny-app-link-netflix-veri-analizi" class="nav-link active" data-scroll-target="#shiny-app-link-netflix-veri-analizi"><span class="header-section-number">4.1</span> Shiny App Link: Netflix Veri Analizi</a></li>
-  <li><a href="#command-line" id="toc-command-line" class="nav-link" data-scroll-target="#command-line"><span class="header-section-number">4.2</span> Command Line</a></li>
+  <li><a href="#business-case-optimizing-gate-and-stand-assignments" id="toc-business-case-optimizing-gate-and-stand-assignments" class="nav-link active" data-scroll-target="#business-case-optimizing-gate-and-stand-assignments"><span class="header-section-number">5.1</span> Business Case: Optimizing Gate and Stand Assignments</a></li>
+  <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem"><span class="header-section-number">5.2</span> Problem</a></li>
+  <li><a href="#what-is-bottom-up-optimization-model" id="toc-what-is-bottom-up-optimization-model" class="nav-link" data-scroll-target="#what-is-bottom-up-optimization-model"><span class="header-section-number">5.3</span> What is Bottom-Up Optimization Model?</a></li>
+  <li><a href="#or-team-solution" id="toc-or-team-solution" class="nav-link" data-scroll-target="#or-team-solution"><span class="header-section-number">5.4</span> OR Team Solution</a></li>
+  <li><a href="#benefits" id="toc-benefits" class="nav-link" data-scroll-target="#benefits"><span class="header-section-number">5.5</span> Benefits</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5.6</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -177,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Shiny Assignment</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Operational Research</span></h1>
 </div>
 
 
@@ -194,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 25, 2023</p>
+      <p class="date">January 2, 2024</p>
     </div>
   </div>
   
@@ -204,13 +207,36 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="shiny-app-link-netflix-veri-analizi" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="shiny-app-link-netflix-veri-analizi"><span class="header-section-number">4.1</span> Shiny App Link: Netflix Veri Analizi</h2>
-<p><a href="https://sasmazd.shinyapps.io/Shiny_HW/">Netflix Shiny App</a></p>
+<section id="business-case-optimizing-gate-and-stand-assignments" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="business-case-optimizing-gate-and-stand-assignments"><span class="header-section-number">5.1</span> Business Case: Optimizing Gate and Stand Assignments</h2>
+<p>Copenhagen Airports, overseeing both Roskilde and Copenhagen airports, struggled to efficiently manage and expand aircraft stands amid rising air travel demands. The complex operational requirements, including specific aircraft types and airline preferences, posed a formidable challenge for strategic planning.</p>
+<p>As I often prefer air travel for my journeys, I decided to choose aviation-related research.</p>
+<p>You can find detailed information about the business case <strong>“Optimizing Gate and Stand Assignments”</strong> from this <a href="https://p1.aprimocdn.net/gurobi/ca9b3b9f-81f5-44e4-8ccf-b021013c8a4f/originalfile/Case-Study---Copenhagen-Airport-Gate-and-Stand-Assignment.pdf">link</a>.</p>
 </section>
-<section id="command-line" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="command-line"><span class="header-section-number">4.2</span> Command Line</h2>
-<p><strong>shiny::runGitHub(repo = “pjournal/mef07-sasmazd”,subdir=“Shiny_HW/app.R”)</strong></p>
+<section id="problem" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="problem"><span class="header-section-number">5.2</span> Problem</h2>
+<p>In 2010, the airport faced the task of maximizing current aircraft stands while planning future expansions cost-effectively. Traditional top-down analyses fell short in considering crucial operational details, prompting the need for a more detailed, <strong>bottom-up optimization model</strong>.</p>
+</section>
+<section id="what-is-bottom-up-optimization-model" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="what-is-bottom-up-optimization-model"><span class="header-section-number">5.3</span> What is Bottom-Up Optimization Model?</h2>
+<p>A Bottom-Up Optimization Model is an approach in problem-solving that starts with specific, detailed elements and builds a comprehensive solution from the ground up. In this method, you begin with specific operational details and gradually integrate them to form a complete and optimized solution. This bottom-up approach ensures a more detailed and accurate representation of the real-world situation, allowing for a more effective and tailored solution to complex problems. In the context of Copenhagen Airport, where specific aircraft types, stand limitations, and airline preferences play crucial roles, a bottom-up approach allows for a more accurate representation of the real-world scenario.</p>
+</section>
+<section id="or-team-solution" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="or-team-solution"><span class="header-section-number">5.4</span> OR Team Solution</h2>
+<p>The Copenhagen Airport Operations Research (OR) team created an advanced mathematical model in two months. This model considered both strict rules (like specific aircraft at certain stands) and flexible preferences (such as airline proximity), guided the team in recommending an efficient plan for investments in stands and gates.</p>
+</section>
+<section id="benefits" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="benefits"><span class="header-section-number">5.5</span> Benefits</h2>
+<ul>
+<li><p><strong>Cost Savings:</strong> The implemented solution saved $70 million USD.</p></li>
+<li><p><strong>Efficient Planning:</strong> The detailed optimization model identified an efficient usage and expansion plan for aircraft stands and gates.</p></li>
+<li><p><strong>Informed Decision-Making:</strong> Quick solution algorithms provided valuable insights, refining the model for informed decision-making.</p></li>
+<li><p><strong>Strategic Investments:</strong> The recommended plan led to a $70 million USD investment in new stands and gates, meeting future capacity needs.</p></li>
+</ul>
+</section>
+<section id="conclusion" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">5.6</span> Conclusion</h2>
+<p>Copenhagen Airport successfully addressed the challenge, optimizing aircraft stand usage and laying a strategic foundation for future expansions. The collaborative effort between the OR team showcases the synergy between operations and development in solving high-opportunity problems in airport management.</p>
 
 
 </section>
@@ -451,14 +477,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./inClass2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">In Class 2</span></span>
+      <a href="./assignment_shiny.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Shiny Assignment</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./OR.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Operational Research</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

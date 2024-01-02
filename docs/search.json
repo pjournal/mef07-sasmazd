@@ -61,5 +61,47 @@
     "title": "4  Shiny Assignment",
     "section": "4.2 Command Line",
     "text": "4.2 Command Line\nshiny::runGitHub(repo = “pjournal/mef07-sasmazd”,subdir=“Shiny_HW/app.R”)"
+  },
+  {
+    "objectID": "OR.html#business-case-optimizing-gate-and-stand-assignments",
+    "href": "OR.html#business-case-optimizing-gate-and-stand-assignments",
+    "title": "5  Operational Research",
+    "section": "5.1 Business Case: Optimizing Gate and Stand Assignments",
+    "text": "5.1 Business Case: Optimizing Gate and Stand Assignments\nCopenhagen Airports, overseeing both Roskilde and Copenhagen airports, struggled to efficiently manage and expand aircraft stands amid rising air travel demands. The complex operational requirements, including specific aircraft types and airline preferences, posed a formidable challenge for strategic planning.\nAs I often prefer air travel for my journeys, I decided to choose aviation-related research.\nYou can find detailed information about the business case “Optimizing Gate and Stand Assignments” from this link."
+  },
+  {
+    "objectID": "OR.html#problem",
+    "href": "OR.html#problem",
+    "title": "5  Operational Research",
+    "section": "5.2 Problem",
+    "text": "5.2 Problem\nIn 2010, the airport faced the task of maximizing current aircraft stands while planning future expansions cost-effectively. Traditional top-down analyses fell short in considering crucial operational details, prompting the need for a more detailed, bottom-up optimization model."
+  },
+  {
+    "objectID": "OR.html#what-is-bottom-up-optimization-model",
+    "href": "OR.html#what-is-bottom-up-optimization-model",
+    "title": "5  Operational Research",
+    "section": "5.3 What is Bottom-Up Optimization Model?",
+    "text": "5.3 What is Bottom-Up Optimization Model?\nA Bottom-Up Optimization Model is an approach in problem-solving that starts with specific, detailed elements and builds a comprehensive solution from the ground up. In this method, you begin with specific operational details and gradually integrate them to form a complete and optimized solution. This bottom-up approach ensures a more detailed and accurate representation of the real-world situation, allowing for a more effective and tailored solution to complex problems. In the context of Copenhagen Airport, where specific aircraft types, stand limitations, and airline preferences play crucial roles, a bottom-up approach allows for a more accurate representation of the real-world scenario."
+  },
+  {
+    "objectID": "OR.html#or-team-solution",
+    "href": "OR.html#or-team-solution",
+    "title": "5  Operational Research",
+    "section": "5.4 OR Team Solution",
+    "text": "5.4 OR Team Solution\nThe Copenhagen Airport Operations Research (OR) team created an advanced mathematical model in two months. This model considered both strict rules (like specific aircraft at certain stands) and flexible preferences (such as airline proximity), guided the team in recommending an efficient plan for investments in stands and gates."
+  },
+  {
+    "objectID": "OR.html#benefits",
+    "href": "OR.html#benefits",
+    "title": "5  Operational Research",
+    "section": "5.5 Benefits",
+    "text": "5.5 Benefits\n\nCost Savings: The implemented solution saved $70 million USD.\nEfficient Planning: The detailed optimization model identified an efficient usage and expansion plan for aircraft stands and gates.\nInformed Decision-Making: Quick solution algorithms provided valuable insights, refining the model for informed decision-making.\nStrategic Investments: The recommended plan led to a $70 million USD investment in new stands and gates, meeting future capacity needs."
+  },
+  {
+    "objectID": "OR.html#conclusion",
+    "href": "OR.html#conclusion",
+    "title": "5  Operational Research",
+    "section": "5.6 Conclusion",
+    "text": "5.6 Conclusion\nCopenhagen Airport successfully addressed the challenge, optimizing aircraft stand usage and laying a strategic foundation for future expansions. The collaborative effort between the OR team showcases the synergy between operations and development in solving high-opportunity problems in airport management."
   }
 ]
